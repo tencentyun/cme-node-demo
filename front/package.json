@@ -1,0 +1,25 @@
+{
+  "version": "1.0.1",
+  "scripts": {
+    "build": "webpack --env development",
+    "ci:dev": "/bin/sh ./deploy/ci.sh api_trigger_dev"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.3",
+    "chalk": "^3.0.0",
+    "html-loader": "^1.1.0",
+    "html-webpack-plugin": "^3.2.0",
+    "husky": "^3.1.0",
+    "less-loader": "^5.0.0",
+    "tgit-api": "^0.18.4",
+    "ts-loader": "^6.2.1",
+    "typescript": "^3.7.2",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.9.0"
+  },
+  "dependencies": {
+    "eventemitter3": "^4.0.0",
+    "vod-js-sdk-v6": "^1.4.7"
+  }
+}

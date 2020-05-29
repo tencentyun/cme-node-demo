@@ -1,0 +1,62 @@
+<style>
+  body,
+  html {
+    padding: 0px;
+    margin: 0px;
+  }
+  #container {
+    background: #ccc;
+    height: 100%;
+    width: 100%;
+    border: none;
+  }
+  .controlls {
+    display: none;
+    /* width: 200px; */
+    height: 200px;
+    overflow: scroll;
+    right: 0px;
+    background: #000;
+    color: #fff;
+    padding: 20px;
+    /* position: fixed; */
+    z-index: 2;
+    position: relative;
+  }
+  #message {
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 14px;
+    z-index: 3;
+    font-weight: 400;
+    background: #000;
+    color: #fff;
+    padding: 20px;
+    width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+</style>
+<div class="editor">
+  <div id="container"></div>
+
+  <div id="message">组件消息</div>
+  <div class="controlls">
+    <div id="ui-wrapper">
+      <h2>配置UI</h2>
+      <div>命令(填入JSON)<textarea id="uicmds"></textarea></div>
+    </div>
+    <div>
+      <label>签名</label>
+      <input type="text" readonly id="sign" />
+      <label>项目Id</label>
+      <input type="text" readonly id="pid" />
+      <label>导入素材</label>
+      <input type="text" id="fid" placeholder="请输入素材FileId " />
+      <input type="file" id="upload" />
+    </div>
+    <div id="eidtor-wrapper"></div>
+  </div>
+</div>

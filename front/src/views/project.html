@@ -1,0 +1,43 @@
+<style>
+  .project {
+    background-color: #f1f1f1;
+    width: 720px;
+    margin: 20px auto;
+    padding: 40px;
+  }
+  .form-list {
+    padding: 0px;
+  }
+  .form-list li {
+    line-height: 2em;
+    margin-top: 10px;
+    list-style: none;
+  }
+</style>
+<div class="project">
+  <h1>项目列表</h1>
+  <form onsubmit="return false" id="projectForm">
+    <!-- createProjectReq.Name = params.Name
+    createProjectReq.Category = params.Category
+    createProjectReq.AspectRatio = params.AspectRatio
+    createProjectReq.Platform = config.platform
+    createProjectReq.ProjectName = params.ProjectName
+    createProjectReq.ProjectDesc = params.ProjectDesc -->
+    <ul class="form-list">
+      <li><label>名字</label><input class="form-text" type="text" name="Name" /></li>
+      <li>
+        <label>项目类型</label> 视频编辑
+        <input type="hidden" value="VIDEO_EDIT" name="Category" />
+      </li>
+      <li>
+        <label>画布比例</label
+        ><select name="AspectRatio"
+          ><option value="9:16">9:16</option
+          ><option value="16:9">16:9</option></select
+        >
+      </li>
+      <li><input type="submit" class="form-text" value="提交" /></li>
+    </ul>
+  </form>
+  <ul id="projectList" class="p-list"></ul>
+</div>
